@@ -2,11 +2,11 @@ import axios from "axios";
 
 // const authEndpoint = "https://accounts.spotify.com/authorize?";
 // const clientId = "10ff71b2181a4ee19909431870ef03f4";
-const redirectUri = "http://localhost:3000";
+// const redirectUri = "http://localhost:3000";
 const scopes = ["user-library-read", "playlist-read-private"];
 const authEndpoint = "https://accounts.spotify.com/authorize?";
 const clientId = "1fab860e3d7c4f3ebea0c715b5e35a39";
-// const redirectUri='https://music-player-chi-three.vercel.app'
+const redirectUri = "https://music-player-psi-hazel.vercel.app";
 export const loginEndpoint = `${authEndpoint}client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
    "%20"
 )}&response_type=token&show_dialog=true`;
